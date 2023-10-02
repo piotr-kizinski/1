@@ -9,11 +9,12 @@
   <body>
     <header>
       <img src="./logo.JPG" alt="Company logo" />
+      <h1 class="company_name">Photo Studio</h1>
     </header>
 
     <main>
       <div class="form__box">
-        <h1>Contact us</h1>
+        <h2 class="form__heading">Contact us</h2>
         <form>
           <label for="title_form">Title</label>
           <br />
@@ -31,17 +32,20 @@
           <br />
           <label for="message_form">Message</label>
           <br />
-          <input
-            type="text"
-            id="message_form"
+          <textarea
             name="message_form"
+            id="message_form"
+            cols="30"
+            rows="10"
             minlength="3"
             maxlength="500"
             required
-          />
+          ></textarea>
           <br />
           <br />
-          <input type="submit" />
+          <div class="btn__submit">
+            <input type="submit" value="Send" /> <br />
+          </div>
         </form>
       </div>
     </main>
