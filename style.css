@@ -3,30 +3,42 @@
   margin: 0;
 }
 
-main {
-  display: flex;
-  margin-top: 50px;
-  justify-content: center;
+header {
+  /* display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px; */
+  position: sticky;
+  top: 0;
 }
 
-header {
+.container__header {
+  /* position: sticky;
+  top: 0; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-h1.company_name {
-  margin-left: 10px;
+  margin-top: 30px;
 }
 
 header img {
-  position: fixed;
+  /* position: fixed; */
   margin-top: 20px;
   margin-left: 10px;
   border-radius: 15px;
   width: 150px;
   height: 85px;
+}
+
+.company_name {
+  margin-left: 10px;
+}
+
+.container__form {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__box {
