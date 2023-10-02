@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./logo.JPG" alt="Company logo" />
+    </header>
+
+    <main>
+      <div class="form__box">
+        <h1>Contact us</h1>
+        <form>
+          <label for="title_form">Title</label>
+          <br />
+          <input
+            type="text"
+            id="title_form"
+            name="title_form"
+            minlength="3"
+            required
+          />
+          <br />
+          <label for="email_form">E-mail</label>
+          <br />
+          <input type="email" id="email_form" name="email_form" required />
+          <br />
+          <label for="message_form">Message</label>
+          <br />
+          <input
+            type="text"
+            id="message_form"
+            name="message_form"
+            minlength="3"
+            maxlength="500"
+            required
+          />
+          <br />
+          <br />
+          <input type="submit" />
+        </form>
+      </div>
+    </main>
+
+    <footer>The Company Ltd. 2023</footer>
+  </body>
+</html>
