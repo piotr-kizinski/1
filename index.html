@@ -17,7 +17,8 @@
     <main class="container__form">
       <div class="form__box">
         <h2 class="form__heading">Contact us</h2>
-        <form>
+        <br />
+        <form action="mailto: customer@example.com" method="post" enctype="text/plain">
           <label for="title_form">Title</label>
           <br />
           <input
@@ -25,14 +26,13 @@
             id="title_form"
             name="title_form"
             minlength="3"
-            required
           />
           <br />
           <label for="email_form">E-mail</label>
           <br />
-          <input type="email" id="email_form" name="email_form" required />
+          <input type="email" id="email_form" name="email_form"  />
           <br />
-          <label for="message_form">Message</label>
+          <label for="message_form">Message</strong></label>
           <br />
           <textarea
             name="message_form"
@@ -41,17 +41,20 @@
             rows="10"
             minlength="3"
             maxlength="500"
-            required
           ></textarea>
           <br />
           <br />
           <div class="btn__submit">
-            <input type="submit" value="Send" /> <br />
+            <input type="submit" value=" Send " /> <br />
           </div>
         </form>
       </div>
     </main>
 
-    <footer>The Company Ltd. 2023</footer>
+    <footer>
+      <div class="footer__rame">
+        <div class="company_name__footer">The Company Ltd. &copy; 2023</div>
+      </div>
+    </footer>
   </body>
 </html>

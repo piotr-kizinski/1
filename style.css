@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 header {
@@ -8,18 +9,25 @@ header {
   align-items: center;
   justify-content: flex-start;
   margin-top: 30px; */
-  /position: sticky;
-  top: 0;
+  /* /position: sticky;
+  top: 0; */
   background-color: white;
 }
 
 .container__header {
   /* position: sticky;
   top: 0; */
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 30px;
+  margin-top: 30px; */
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 
 header img {
@@ -37,18 +45,20 @@ header img {
 
 .container__form {
   display: flex;
-  margin-top: 50px;
+  margin-top: 150px;
   justify-content: center;
   align-items: center;
 }
 
 .form__box {
-  border: 1px solid;
+  border: 2px lightgray solid;
   border-radius: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 40px;
   padding-right: 40px;
+  width: 20%;
+  min-width: 150px;
 }
 
 .btn__submit {
@@ -57,11 +67,73 @@ header img {
   justify-content: center;
 }
 
+input[type="submit"] {
+  background-color: rgba(97, 97, 105, 0.348);
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  height: 30px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+
 footer {
-  position: relative;
-  margin-top: 100px;
-  border-top: 1px solid;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.company_name__footer {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   padding: 20px;
-  text-align: center;
+}
+
+.footer__rame {
+  border-top: 1px solid;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__heading {
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  line-height: 10px;
+}
+
+form input,
+textarea {
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 4px 4px;
+  border: 2px lightgrey solid;
+  box-sizing: border-box;
+}
+
+form label {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+form input:invalid {
+  box-shadow: 0px 0px 5px 4px rgba(226, 43, 43, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 4px rgba(226, 43, 43, 0.75);
+  -moz-box-shadow: 0px 0px 5px 4px rgba(226, 43, 43, 0.75);
+}
+
+form textarea:invalid {
+  box-shadow: 0px 0px 5px 4px rgba(226, 43, 43, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 4px rgba(226, 43, 43, 0.75);
+  -moz-box-shadow: 0px 0px 5px 4px rgba(226, 43, 43, 0.75);
 }
